@@ -85,7 +85,8 @@ if uploaded_file is not None:
     st.write(f"**Result:** {class_names[predicted_class]}")
     st.write(f"**Confidence:** {confidence * 100:.2f}%")
 
-    if predicted_class == 1:
+    if predicted_class == 0:
         st.error("⚠️ Tumor Detected! Please consult a medical professional.")
     else:
         st.success("✅ No Tumor Detected.")
+
